@@ -2,6 +2,9 @@
 Image (JPEG, BMP) comparison (perceptual hash algorithm)
 
 
+[![Kotlin version](https://img.shields.io/badge/Kotlin-1.6-blue)](https://kotlinlang.org/docs/whatsnew16.html)
+
+
 [![Maven Central](https://img.shields.io/maven-central/v/ru.avicorp/pHashCalc=latest%20release)](https://[maven-badges.herokuapp.com/maven-central/ru.avicorp/phashcalc](https://central.sonatype.dev/artifact/ru.avicorp/phashcalc/1.0.0/)])
 
 
