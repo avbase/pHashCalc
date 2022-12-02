@@ -1,5 +1,5 @@
 # pHashCalc
-Image (JPEG, BMP) comparison (perceptual hash algorithm).
+Images (JPEG, BMP) comparison (perceptual hash algorithm).
 
 [![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
 [![Kotlin version](https://img.shields.io/badge/Kotlin-1.7.20-blue)]([https://kotlinlang.org/docs/whatsnew16.html](https://kotlinlang.org/docs/whatsnew1720.html))
@@ -12,10 +12,9 @@ Image (JPEG, BMP) comparison (perceptual hash algorithm).
 
 
 
-Android library pHashCalc: 
+### Android library pHashCalc: 
 
 Сalculates the percentages of identity of two JPEG(JPG) or BMP files (algorithm pHash).
-
 Also checks the structure of a JPEG (JPG) file against the main signatures.
 
     - StartOfImage
@@ -30,8 +29,6 @@ Also checks the structure of a JPEG (JPG) file against the main signatures.
 ## How to use
 
 The project's Maven access is hosted on OSS Sonatype (and available from Maven Central).
-
-
 Android : pHashCalc supports Android starting on API 26 and up.
 
 #### Using with Gradle
