@@ -68,6 +68,13 @@ if (phash.loadSourceFile(namefileTwo, namefileOne)) {
         if (!phash.validJPEGStruct(namefileThree)) println("This file is not JPEG(JPG)")
 
 ```
+### Usage description
+
+The library implements the pHash algorithm that uses perceptual hashes to compare images, (detailed documentation and description of algorithms using perceptual
+hashes can be found at https://www.phash.org/), my implementation of this algorithm was used to build a video surveillance system for a private house (https://avicorp.ru)
+
+
+
 ### License
 
  Copyright (C) 2017 The Λrrow Authors
