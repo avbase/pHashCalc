@@ -2,10 +2,10 @@
 Image (JPEG, BMP) comparison (perceptual hash algorithm)
 
 
-[![Maven Central](https://img.shields.io/maven-central/v/ru.avicorp/pHashCalc=latest%20release)](https://[maven-badges.herokuapp.com/maven-central/ru.avicorp/phashcalc])
+[![Maven Central](https://img.shields.io/maven-central/v/ru.avicorp/pHashCalc=latest%20release)](https://[maven-badges.herokuapp.com/maven-central/ru.avicorp/phashcalc](https://central.sonatype.dev/artifact/ru.avicorp/phashcalc/1.0.0/)])
 
 
-
+https://central.sonatype.dev/artifact/ru.avicorp/phashcalc/1.0.0/
 (https://repo1.maven.org/maven2/ru/avicorp/phashcalc/)
 Android
 pHashCalc supports Android starting on API 22 and up.
