@@ -1,4 +1,4 @@
-# pHashCalc
+# Android library pHashCalc:
 Images (JPEG, BMP) comparison (perceptual hash algorithm).
 
 [![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
@@ -11,8 +11,7 @@ Images (JPEG, BMP) comparison (perceptual hash algorithm).
 
 
 
-
-### Android library pHashCalc: 
+###  Capabilities pHashCalc: 
 
 Сalculates the percentages of identity of two JPEG(JPG) or BMP files (algorithm pHash).
 Also checks the structure of a JPEG (JPG) file against the main signatures.
@@ -24,7 +23,6 @@ Also checks the structure of a JPEG (JPG) file against the main signatures.
     - DefaultHuffmanTable
     - StartOfScan
     - EndOfImage
-
 
 ## How to use
 
