@@ -68,7 +68,7 @@ if (phash.loadSourceFile(namefileTwo, namefileOne)) {
 ```
 ### Usage description
 
-The library implements the pHash algorithm that uses perceptual hashes to compare images, (detailed documentation and description of algorithms using perceptual hashes can be found at [pHash](https://pHash.org)), my implementation of this algorithm was used to build a video surveillance system for a private house [smartHomeVideoControl](https://avicorp.ru)
+The library implements the pHash algorithm that uses perceptual hashes to compare images, (detailed documentation and description of algorithms using perceptual hashes can be found at [pHash](https://pHash.org)), my implementation of this algorithm was used to build a video surveillance system for a private house [Smart Home Video Control](https://avicorp.ru)
 
 ### License
 
