@@ -10,6 +10,11 @@ Image (JPEG, BMP) comparison (perceptual hash algorithm)
 
 https://central.sonatype.dev/artifact/ru.avicorp/phashcalc/1.0.0/
 (https://repo1.maven.org/maven2/ru/avicorp/phashcalc/)
+
+<a href="https://github.com/avbase/pHashCalc">
+<img align="left" src="https://github.com/avbase/pHashCalc.gif" width="484" height="220" /></a>
+
+
 Android
 pHashCalc supports Android starting on API 22 and up.
 
