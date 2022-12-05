@@ -3,7 +3,7 @@ Images (JPEG, BMP) comparison (perceptual hash algorithm).
 
 [![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
 [![Kotlin version](https://img.shields.io/badge/Kotlin-1.7.20-blue)]([https://kotlinlang.org/docs/whatsnew16.html](https://kotlinlang.org/docs/whatsnew1720.html))
-[![mavenCentral](https://img.shields.io/badge/Download-v1.0.0-red)](https://search.maven.org/search?q=ru.avicorp.phashcalc)
+[![mavenCentral](https://img.shields.io/badge/download_Maven-v1.0.1-red)](https://search.maven.org/search?q=ru.avicorp.phashcalc)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 
@@ -38,8 +38,8 @@ repositories {
 }
 
 dependencies {
-   def phashcalc_version = "1.0.1"
-   implementation "ru.avicorp:phashcalc:$phashcalc_version"
+       def phashcalc_version = "1.0.1"
+    implementation "ru.avicorp:phashcalc:$phashcalc_version"
 }
 ```
 
