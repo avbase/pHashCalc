@@ -38,7 +38,8 @@ repositories {
 }
 
 dependencies {
-   implementation("implementation "ru.avicorp:phashcalc:1.0.0")
+   def phashcalc_version = "1.0.1"
+   implementation "ru.avicorp:phashcalc:$phashcalc_version"
 }
 ```
 
@@ -47,25 +48,61 @@ dependencies {
 ```groovy
 val phash = pHashCalc()
 
-//Сalculate the percentages of identity of two JPEG(JPG) or BMP files (algorithm pHash)
-if (phash.loadSourceFile(namefileTwo, namefileOne)) {
-            println("pHash: ${phash.calculateIdentical()}%")
-} else println("Files not found or check permission.")
+val phashCalc = pHashCalc()//get to phashCalc library
 
-// Condition: files are uploaded
-        if (phash.checkCondition()) {
+        //Сalculate the percentages of identity of two JPEG(JPG) or(and) BMP files (algorithm pHash)
+        if (phashCalc.loadSourceFile(sourceFileOne, sourceFileFour)) {
+            Log.e("pHashCalc", "pHash: ${phashCalc.calculateIdentical()}%")
+        } else Log.e("pHashCalc", "Files not found or check permission")
+
+        //Condition: files checked and uploaded else clean data
+        if (phashCalc.checkCondition()) {
             //Greyscale hash files
-            println("Greyscale hash files: ${phash.getHashOne()} vs ${phash.getHashTwo()}")
-            
+            Log.e("pHashCalc", "Greyscale hash files: ${phashCalc.getHashOne()} vs ${phashCalc.getHashTwo()}")
             //Average pixel greyscale files
-            println("Average pixel greyscale files: ${phash.getAveragePixelOne()} vs  ${phash.getAveragePixelTwo()}")
-            
-        } else println("Please load files")
-
-// Checking the validity of the JPEG(JPG) by its structure (struct is displayed in the log)
-        if (!phash.validJPEGStruct(namefileThree)) println("This file is not JPEG(JPG)")
+            Log.e("pHashCalc", "Average pixel greyscale files: ${phashCalc.getAveragePixelOne()} vs  ${phashCalc.getAveragePixelTwo()}")
+        } else Log.e("pHashCalc", "Please load files")
 
 ```
+##### JPEG
+```groovy
+// Checking the validity of the JPEG(JPG) by its structure (struct is displayed in the log)
+        if (!phashCalc.validJPEGStruct(sourceFileThree)) Log.e("JPEG Struct", "This file is not JPEG(JPG)")
+        else Log.e("JPEG Struct", "By JPEG(JPG) signatures, structure is correct")
+
+        //If load BMP, get HEADER else clean data
+        phashCalc.getJPEGData()
+        //If load JPEG, get HEADER else clean data
+        //sizeJPEG - Size of JPEG file (bytes);
+        //howHuffmanTableJPEG - How Huffman Table 1-4
+        //averageByteJPEG - average byte (raw data, not quantization,header,haffman)
+```
+##### BMP
+```groovy
+        // Checking the validity of the BMP by its signatures (header is displayed in the log)
+        if (!phashCalc.validBMPStruct(sourceFileFour)) Log.e("BMP Struct", "This file is not BMP")
+        else Log.e("BMP Struct", "By Bitmap Picture signatures, structure is correct")
+
+        phashCalc.getBMPData()
+        //If load BMP, get HEADER else clean data
+        //sizeBMP -Size of bmp file (bytes);
+        //offsetDataBMP - Offset before image data (bytes);
+        //headerBMP - Size Header Struct;
+        //sizeWidthBMP - Size of Image width (pixels);
+        //sizeHeightBMP - Size of Image height (pixels);
+        //bitDepthBMP - Depth of color: (bit per pixel);
+        //undColDepthBMP - Depth of color: (bit per pixel) (string);
+        //horResInMeterBMP - Horizontal resolution (in pixels per meter);
+        //vertResInMeterBMP - Vertical resolution (in pixels per meter);
+        //numColorImageBMP - Number of colors in the image or zero;
+        //numImpotentColorImageBMP - Number of important colors or zero;
+        //compressBMP - Compression type;
+        //compressTypeBMP - Compression type(string);
+        //sizeRAWImageBMP -Size raw image data (bytes)
+```
+
+
+
 ### Usage description
 
 The library implements the pHash algorithm that uses perceptual hashes to compare images, (detailed documentation and description of algorithms using perceptual hashes can be found at [pHash](https://pHash.org)), my implementation of this algorithm was used to build a video surveillance system for a private house [Smart Home Video Control](https://avicorp.ru)
