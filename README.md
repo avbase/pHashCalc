@@ -109,7 +109,7 @@ The library implements the pHash algorithm that uses perceptual hashes to compar
 
 ### License
 
- Copyright (C) 2017 The Λrrow Authors
+ Copyright (C) 2021 The avicorp Authors
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
