@@ -46,7 +46,6 @@ dependencies {
 #### Example
 
 ```groovy
-val phash = pHashCalc()
 
 val phashCalc = pHashCalc()//get to phashCalc library
 
